@@ -14,6 +14,15 @@ public class DemoConstructor {
     }
 }
 
+class BookFactory {
+
+    public Book createBookWithName(String name) {
+        Book book = new Book(name);
+        return book;
+    }
+
+}
+
 class BookBuilder {
     Book book;
 
